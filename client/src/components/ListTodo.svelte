@@ -10,7 +10,9 @@
         method: "DELETE",
       });
       todos = todos.filter((todo) => todo.todo_id !== id);
-    } catch (error) {}
+    } catch (error) {
+      console.error(error)
+    }
   };
 
   const getTodos = async () => {
